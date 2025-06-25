@@ -158,18 +158,18 @@ class PokemonDataCollector:
             print(f"Error fetching cards for episode {episode_id}: {e}")
             return []
     
-    def get_cards_by_set_name(self, set_name, limit=50):
+   def get_cards_by_set_name(self, set_name, limit=50):
     """
-    Simplified version - get cards directly without episode lookup
+    Optimized version - minimal API calls
     """
     try:
-        print(f"Getting top {limit} cards for '{set_name}' (simplified method)")
+        print(f"Getting top {limit} cards for '{set_name}' (optimized method)")
         
-        # Method 1: Try direct search first
+        # Try direct search first (1 API call)
         url = f"{self.base_url}/cards"
         params = {
             "search": set_name,
-            "per_page": limit,
+            "per_page": min(limit, 50),
             "sort": "price_desc"
         }
         
@@ -179,49 +179,27 @@ class PokemonDataCollector:
         data = response.json()
         cards = data.get('data', [])
         
+        print(f"   Found {len(cards)} cards via direct search")
+        
         if cards:
-            print(f"   Found {len(cards)} cards via search")
-            return cards
-        
-        # Method 2: Fallback to episode method (but limited)
-        print(f"   No cards via search, trying episode method...")
-        
-        # Only get first page of episodes to save time
-        url = f"{self.base_url}/episodes"
-        params = {"page": 1, "per_page": 20}
-        
-        response = requests.get(url, headers=self.headers, params=params)
-        response.raise_for_status()
-        
-        episodes_data = response.json()
-        episodes = episodes_data.get('data', [])
-        
-        # Find matching episode in first page only
-        for episode in episodes:
-            episode_name = episode.get('name', '').lower()
-            if set_name.lower() in episode_name or episode_name in set_name.lower():
-                episode_id = episode.get('id')
-                print(f"   Found episode: {episode.get('name')} (ID: {episode_id})")
+            # Filter cards with valid prices
+            cards_with_prices = []
+            for card in cards:
+                price = self.extract_card_price(card)
+                if price > 0:
+                    cards_with_prices.append(card)
+            
+            print(f"   {len(cards_with_prices)} cards have valid prices")
+            
+            if cards_with_prices:
+                # Show top 3 for debugging
+                for i, card in enumerate(cards_with_prices[:3], 1):
+                    price = self.extract_card_price(card)
+                    print(f"     {i}. {card.get('name', 'Unknown')} - €{price:.2f}")
                 
-                # Get cards from this episode (limited to 1 page)
-                cards_url = f"{self.base_url}/cards"
-                cards_params = {
-                    "episode_id": episode_id,
-                    "per_page": limit,
-                    "page": 0
-                }
-                
-                cards_response = requests.get(cards_url, headers=self.headers, params=cards_params)
-                cards_response.raise_for_status()
-                
-                cards_data = cards_response.json()
-                cards = cards_data.get('data', [])
-                
-                if cards:
-                    print(f"   Found {len(cards)} cards from episode")
-                    return cards
+                return cards_with_prices[:limit]
         
-        print(f"   No cards found for '{set_name}'")
+        print(f"   No valid cards found for '{set_name}'")
         return []
         
     except Exception as e:
