@@ -1,0 +1,1330 @@
+[
+  {
+    "id": 221,
+    "name": "Destined Rivals",
+    "slug": "destined-rivals",
+    "released_at": "2025-05-30",
+    "cards_total": 244,
+    "cards_printed_total": 182
+  },
+  {
+    "id": 220,
+    "name": "Journey Together",
+    "slug": "journey-together",
+    "released_at": "2025-03-28",
+    "cards_total": 190,
+    "cards_printed_total": 159
+  },
+  {
+    "id": 212,
+    "name": "Prismatic Evolutions",
+    "slug": "prismatic-evolutions",
+    "released_at": "2025-01-17",
+    "cards_total": 180,
+    "cards_printed_total": 131
+  },
+  {
+    "id": 172,
+    "name": "Surging Sparks",
+    "slug": "surging-sparks",
+    "released_at": "2024-11-08",
+    "cards_total": 252,
+    "cards_printed_total": 191
+  },
+  {
+    "id": 10,
+    "name": "Stellar Crown",
+    "slug": "stellar-crown",
+    "released_at": "2024-09-13",
+    "cards_total": 175,
+    "cards_printed_total": 142
+  },
+  {
+    "id": 11,
+    "name": "Shrouded Fable",
+    "slug": "shrouded-fable",
+    "released_at": "2024-08-02",
+    "cards_total": 99,
+    "cards_printed_total": 64
+  },
+  {
+    "id": 12,
+    "name": "Twilight Masquerade",
+    "slug": "twilight-masquerade",
+    "released_at": "2024-05-24",
+    "cards_total": 226,
+    "cards_printed_total": 167
+  },
+  {
+    "id": 13,
+    "name": "Temporal Forces",
+    "slug": "temporal-forces",
+    "released_at": "2024-03-22",
+    "cards_total": 218,
+    "cards_printed_total": 162
+  },
+  {
+    "id": 14,
+    "name": "Paldean Fates",
+    "slug": "paldean-fates",
+    "released_at": "2024-01-26",
+    "cards_total": 245,
+    "cards_printed_total": 91
+  },
+  {
+    "id": 15,
+    "name": "Paradox Rift",
+    "slug": "paradox-rift",
+    "released_at": "2023-11-03",
+    "cards_total": 266,
+    "cards_printed_total": 182
+  },
+  {
+    "id": 16,
+    "name": "151",
+    "slug": "151",
+    "released_at": "2023-09-22",
+    "cards_total": 207,
+    "cards_printed_total": 165
+  },
+  {
+    "id": 17,
+    "name": "Obsidian Flames",
+    "slug": "obsidian-flames",
+    "released_at": "2023-08-11",
+    "cards_total": 230,
+    "cards_printed_total": 197
+  },
+  {
+    "id": 18,
+    "name": "Paldea Evolved",
+    "slug": "paldea-evolved",
+    "released_at": "2023-06-09",
+    "cards_total": 279,
+    "cards_printed_total": 193
+  },
+  {
+    "id": 19,
+    "name": "Scarlet & Violet",
+    "slug": "scarlet-violet",
+    "released_at": "2023-03-31",
+    "cards_total": 258,
+    "cards_printed_total": 198
+  },
+  {
+    "id": 20,
+    "name": "Scarlet & Violet Energies",
+    "slug": "scarlet-violet-energies",
+    "released_at": "2023-03-31",
+    "cards_total": 16,
+    "cards_printed_total": 16
+  },
+  {
+    "id": 21,
+    "name": "Crown Zenith",
+    "slug": "crown-zenith",
+    "released_at": "2023-01-20",
+    "cards_total": 160,
+    "cards_printed_total": 159
+  },
+  {
+    "id": 22,
+    "name": "Crown Zenith Galarian Gallery",
+    "slug": "crown-zenith-galarian-gallery",
+    "released_at": "2023-01-20",
+    "cards_total": 70,
+    "cards_printed_total": 70
+  },
+  {
+    "id": 23,
+    "name": "SV Black Star Promos",
+    "slug": "sv-black-star-promos",
+    "released_at": "2023-01-01",
+    "cards_total": 148,
+    "cards_printed_total": 150
+  },
+  {
+    "id": 24,
+    "name": "Silver Tempest",
+    "slug": "silver-tempest",
+    "released_at": "2022-11-11",
+    "cards_total": 215,
+    "cards_printed_total": 195
+  },
+  {
+    "id": 25,
+    "name": "Silver Tempest Trainer Gallery",
+    "slug": "silver-tempest-trainer-gallery",
+    "released_at": "2022-11-11",
+    "cards_total": 30,
+    "cards_printed_total": 30
+  },
+  {
+    "id": 26,
+    "name": "Lost Origin",
+    "slug": "lost-origin",
+    "released_at": "2022-09-09",
+    "cards_total": 217,
+    "cards_printed_total": 196
+  },
+  {
+    "id": 27,
+    "name": "Lost Origin Trainer Gallery",
+    "slug": "lost-origin-trainer-gallery",
+    "released_at": "2022-09-09",
+    "cards_total": 30,
+    "cards_printed_total": 30
+  },
+  {
+    "id": 28,
+    "name": "McDonald's Collection 2022",
+    "slug": "mcdonalds-collection-2022",
+    "released_at": "2022-08-03",
+    "cards_total": 15,
+    "cards_printed_total": 15
+  },
+  {
+    "id": 29,
+    "name": "Pokémon GO",
+    "slug": "pokemon-go",
+    "released_at": "2022-07-01",
+    "cards_total": 88,
+    "cards_printed_total": 78
+  },
+  {
+    "id": 30,
+    "name": "Astral Radiance",
+    "slug": "astral-radiance",
+    "released_at": "2022-05-27",
+    "cards_total": 216,
+    "cards_printed_total": 189
+  },
+  {
+    "id": 31,
+    "name": "Astral Radiance Trainer Gallery",
+    "slug": "astral-radiance-trainer-gallery",
+    "released_at": "2022-05-27",
+    "cards_total": 30,
+    "cards_printed_total": 30
+  },
+  {
+    "id": 32,
+    "name": "Brilliant Stars",
+    "slug": "brilliant-stars",
+    "released_at": "2022-02-25",
+    "cards_total": 186,
+    "cards_printed_total": 172
+  },
+  {
+    "id": 33,
+    "name": "Brilliant Stars Trainer Gallery",
+    "slug": "brilliant-stars-trainer-gallery",
+    "released_at": "2022-02-25",
+    "cards_total": 30,
+    "cards_printed_total": 30
+  },
+  {
+    "id": 34,
+    "name": "Fusion Strike",
+    "slug": "fusion-strike",
+    "released_at": "2021-11-12",
+    "cards_total": 284,
+    "cards_printed_total": 264
+  },
+  {
+    "id": 35,
+    "name": "Celebrations",
+    "slug": "celebrations",
+    "released_at": "2021-10-08",
+    "cards_total": 25,
+    "cards_printed_total": 25
+  },
+  {
+    "id": 36,
+    "name": "Celebrations: Classic Collection",
+    "slug": "celebrations-classic-collection",
+    "released_at": "2021-10-08",
+    "cards_total": 25,
+    "cards_printed_total": 25
+  },
+  {
+    "id": 37,
+    "name": "Evolving Skies",
+    "slug": "evolving-skies",
+    "released_at": "2021-08-27",
+    "cards_total": 237,
+    "cards_printed_total": 203
+  },
+  {
+    "id": 38,
+    "name": "Chilling Reign",
+    "slug": "chilling-reign",
+    "released_at": "2021-06-18",
+    "cards_total": 233,
+    "cards_printed_total": 198
+  },
+  {
+    "id": 39,
+    "name": "Battle Styles",
+    "slug": "battle-styles",
+    "released_at": "2021-03-19",
+    "cards_total": 183,
+    "cards_printed_total": 163
+  },
+  {
+    "id": 40,
+    "name": "Shining Fates",
+    "slug": "shining-fates",
+    "released_at": "2021-02-19",
+    "cards_total": 73,
+    "cards_printed_total": 72
+  },
+  {
+    "id": 41,
+    "name": "Shining Fates Shiny Vault",
+    "slug": "shining-fates-shiny-vault",
+    "released_at": "2021-02-19",
+    "cards_total": 122,
+    "cards_printed_total": 122
+  },
+  {
+    "id": 42,
+    "name": "McDonald's Collection 2021",
+    "slug": "mcdonalds-collection-2021",
+    "released_at": "2021-02-09",
+    "cards_total": 25,
+    "cards_printed_total": 25
+  },
+  {
+    "id": 43,
+    "name": "Vivid Voltage",
+    "slug": "vivid-voltage",
+    "released_at": "2020-11-13",
+    "cards_total": 203,
+    "cards_printed_total": 185
+  },
+  {
+    "id": 44,
+    "name": "Champion's Path",
+    "slug": "champions-path",
+    "released_at": "2020-09-25",
+    "cards_total": 80,
+    "cards_printed_total": 73
+  },
+  {
+    "id": 45,
+    "name": "Pokémon Futsal Collection",
+    "slug": "pokemon-futsal-collection",
+    "released_at": "2020-09-11",
+    "cards_total": 5,
+    "cards_printed_total": 5
+  },
+  {
+    "id": 46,
+    "name": "Darkness Ablaze",
+    "slug": "darkness-ablaze",
+    "released_at": "2020-08-14",
+    "cards_total": 201,
+    "cards_printed_total": 189
+  },
+  {
+    "id": 47,
+    "name": "Rebel Clash",
+    "slug": "rebel-clash",
+    "released_at": "2020-05-01",
+    "cards_total": 209,
+    "cards_printed_total": 192
+  },
+  {
+    "id": 48,
+    "name": "Sword & Shield",
+    "slug": "sword-shield",
+    "released_at": "2020-02-07",
+    "cards_total": 216,
+    "cards_printed_total": 202
+  },
+  {
+    "id": 49,
+    "name": "SWSH Black Star Promos",
+    "slug": "swsh-black-star-promos",
+    "released_at": "2019-11-15",
+    "cards_total": 304,
+    "cards_printed_total": 307
+  },
+  {
+    "id": 50,
+    "name": "Cosmic Eclipse",
+    "slug": "cosmic-eclipse",
+    "released_at": "2019-11-01",
+    "cards_total": 272,
+    "cards_printed_total": 236
+  },
+  {
+    "id": 51,
+    "name": "McDonald's Collection 2019",
+    "slug": "mcdonalds-collection-2019",
+    "released_at": "2019-10-15",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 52,
+    "name": "Hidden Fates",
+    "slug": "hidden-fates",
+    "released_at": "2019-08-23",
+    "cards_total": 69,
+    "cards_printed_total": 68
+  },
+  {
+    "id": 53,
+    "name": "Hidden Fates Shiny Vault",
+    "slug": "hidden-fates-shiny-vault",
+    "released_at": "2019-08-23",
+    "cards_total": 94,
+    "cards_printed_total": 94
+  },
+  {
+    "id": 54,
+    "name": "Unified Minds",
+    "slug": "unified-minds",
+    "released_at": "2019-08-02",
+    "cards_total": 260,
+    "cards_printed_total": 236
+  },
+  {
+    "id": 55,
+    "name": "Unbroken Bonds",
+    "slug": "unbroken-bonds",
+    "released_at": "2019-05-03",
+    "cards_total": 234,
+    "cards_printed_total": 214
+  },
+  {
+    "id": 56,
+    "name": "Detective Pikachu",
+    "slug": "detective-pikachu",
+    "released_at": "2019-04-05",
+    "cards_total": 18,
+    "cards_printed_total": 18
+  },
+  {
+    "id": 57,
+    "name": "Team Up",
+    "slug": "team-up",
+    "released_at": "2019-02-01",
+    "cards_total": 198,
+    "cards_printed_total": 181
+  },
+  {
+    "id": 58,
+    "name": "Lost Thunder",
+    "slug": "lost-thunder",
+    "released_at": "2018-11-02",
+    "cards_total": 240,
+    "cards_printed_total": 214
+  },
+  {
+    "id": 59,
+    "name": "McDonald's Collection 2018",
+    "slug": "mcdonalds-collection-2018",
+    "released_at": "2018-10-16",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 60,
+    "name": "Dragon Majesty",
+    "slug": "dragon-majesty",
+    "released_at": "2018-09-07",
+    "cards_total": 80,
+    "cards_printed_total": 70
+  },
+  {
+    "id": 61,
+    "name": "Celestial Storm",
+    "slug": "celestial-storm",
+    "released_at": "2018-08-03",
+    "cards_total": 187,
+    "cards_printed_total": 168
+  },
+  {
+    "id": 62,
+    "name": "Forbidden Light",
+    "slug": "forbidden-light",
+    "released_at": "2018-05-04",
+    "cards_total": 150,
+    "cards_printed_total": 131
+  },
+  {
+    "id": 63,
+    "name": "Ultra Prism",
+    "slug": "ultra-prism",
+    "released_at": "2018-02-02",
+    "cards_total": 178,
+    "cards_printed_total": 156
+  },
+  {
+    "id": 64,
+    "name": "McDonald's Collection 2017",
+    "slug": "mcdonalds-collection-2017",
+    "released_at": "2017-11-07",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 65,
+    "name": "Crimson Invasion",
+    "slug": "crimson-invasion",
+    "released_at": "2017-11-03",
+    "cards_total": 126,
+    "cards_printed_total": 111
+  },
+  {
+    "id": 66,
+    "name": "Shining Legends",
+    "slug": "shining-legends",
+    "released_at": "2017-10-06",
+    "cards_total": 81,
+    "cards_printed_total": 73
+  },
+  {
+    "id": 67,
+    "name": "Burning Shadows",
+    "slug": "burning-shadows",
+    "released_at": "2017-08-05",
+    "cards_total": 177,
+    "cards_printed_total": 147
+  },
+  {
+    "id": 68,
+    "name": "Guardians Rising",
+    "slug": "guardians-rising",
+    "released_at": "2017-05-05",
+    "cards_total": 180,
+    "cards_printed_total": 145
+  },
+  {
+    "id": 69,
+    "name": "Sun & Moon",
+    "slug": "sun-moon",
+    "released_at": "2017-02-03",
+    "cards_total": 173,
+    "cards_printed_total": 149
+  },
+  {
+    "id": 70,
+    "name": "SM Black Star Promos",
+    "slug": "sm-black-star-promos",
+    "released_at": "2017-02-03",
+    "cards_total": 250,
+    "cards_printed_total": 248
+  },
+  {
+    "id": 71,
+    "name": "Evolutions",
+    "slug": "evolutions",
+    "released_at": "2016-11-02",
+    "cards_total": 113,
+    "cards_printed_total": 108
+  },
+  {
+    "id": 72,
+    "name": "McDonald's Collection 2016",
+    "slug": "mcdonalds-collection-2016",
+    "released_at": "2016-08-19",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 73,
+    "name": "Steam Siege",
+    "slug": "steam-siege",
+    "released_at": "2016-08-03",
+    "cards_total": 116,
+    "cards_printed_total": 114
+  },
+  {
+    "id": 74,
+    "name": "Fates Collide",
+    "slug": "fates-collide",
+    "released_at": "2016-05-02",
+    "cards_total": 129,
+    "cards_printed_total": 124
+  },
+  {
+    "id": 75,
+    "name": "Generations",
+    "slug": "generations",
+    "released_at": "2016-02-22",
+    "cards_total": 117,
+    "cards_printed_total": 83
+  },
+  {
+    "id": 76,
+    "name": "BREAKpoint",
+    "slug": "breakpoint",
+    "released_at": "2016-02-03",
+    "cards_total": 126,
+    "cards_printed_total": 122
+  },
+  {
+    "id": 77,
+    "name": "McDonald's Collection 2015",
+    "slug": "mcdonalds-collection-2015",
+    "released_at": "2015-11-27",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 78,
+    "name": "BREAKthrough",
+    "slug": "breakthrough",
+    "released_at": "2015-11-04",
+    "cards_total": 165,
+    "cards_printed_total": 162
+  },
+  {
+    "id": 79,
+    "name": "Ancient Origins",
+    "slug": "ancient-origins",
+    "released_at": "2015-08-12",
+    "cards_total": 100,
+    "cards_printed_total": 98
+  },
+  {
+    "id": 80,
+    "name": "Roaring Skies",
+    "slug": "roaring-skies",
+    "released_at": "2015-05-06",
+    "cards_total": 112,
+    "cards_printed_total": 108
+  },
+  {
+    "id": 81,
+    "name": "Double Crisis",
+    "slug": "double-crisis",
+    "released_at": "2015-03-25",
+    "cards_total": 34,
+    "cards_printed_total": 34
+  },
+  {
+    "id": 82,
+    "name": "Primal Clash",
+    "slug": "primal-clash",
+    "released_at": "2015-02-04",
+    "cards_total": 164,
+    "cards_printed_total": 160
+  },
+  {
+    "id": 83,
+    "name": "Phantom Forces",
+    "slug": "phantom-forces",
+    "released_at": "2014-11-05",
+    "cards_total": 124,
+    "cards_printed_total": 119
+  },
+  {
+    "id": 84,
+    "name": "Furious Fists",
+    "slug": "furious-fists",
+    "released_at": "2014-08-13",
+    "cards_total": 114,
+    "cards_printed_total": 111
+  },
+  {
+    "id": 85,
+    "name": "McDonald's Collection 2014",
+    "slug": "mcdonalds-collection-2014",
+    "released_at": "2014-05-23",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 86,
+    "name": "Flashfire",
+    "slug": "flashfire",
+    "released_at": "2014-05-07",
+    "cards_total": 110,
+    "cards_printed_total": 106
+  },
+  {
+    "id": 87,
+    "name": "XY",
+    "slug": "xy",
+    "released_at": "2014-02-05",
+    "cards_total": 146,
+    "cards_printed_total": 146
+  },
+  {
+    "id": 88,
+    "name": "Kalos Starter Set",
+    "slug": "kalos-starter-set",
+    "released_at": "2013-11-08",
+    "cards_total": 39,
+    "cards_printed_total": 39
+  },
+  {
+    "id": 89,
+    "name": "Legendary Treasures",
+    "slug": "legendary-treasures",
+    "released_at": "2013-11-06",
+    "cards_total": 140,
+    "cards_printed_total": 113
+  },
+  {
+    "id": 90,
+    "name": "XY Black Star Promos",
+    "slug": "xy-black-star-promos",
+    "released_at": "2013-10-12",
+    "cards_total": 216,
+    "cards_printed_total": 211
+  },
+  {
+    "id": 91,
+    "name": "Plasma Blast",
+    "slug": "plasma-blast",
+    "released_at": "2013-08-14",
+    "cards_total": 105,
+    "cards_printed_total": 101
+  },
+  {
+    "id": 92,
+    "name": "Plasma Freeze",
+    "slug": "plasma-freeze",
+    "released_at": "2013-05-08",
+    "cards_total": 122,
+    "cards_printed_total": 116
+  },
+  {
+    "id": 93,
+    "name": "Plasma Storm",
+    "slug": "plasma-storm",
+    "released_at": "2013-02-06",
+    "cards_total": 138,
+    "cards_printed_total": 135
+  },
+  {
+    "id": 94,
+    "name": "Boundaries Crossed",
+    "slug": "boundaries-crossed",
+    "released_at": "2012-11-07",
+    "cards_total": 153,
+    "cards_printed_total": 149
+  },
+  {
+    "id": 95,
+    "name": "Dragon Vault",
+    "slug": "dragon-vault",
+    "released_at": "2012-10-05",
+    "cards_total": 21,
+    "cards_printed_total": 20
+  },
+  {
+    "id": 96,
+    "name": "Dragons Exalted",
+    "slug": "dragons-exalted",
+    "released_at": "2012-08-15",
+    "cards_total": 128,
+    "cards_printed_total": 124
+  },
+  {
+    "id": 97,
+    "name": "McDonald's Collection 2012",
+    "slug": "mcdonalds-collection-2012",
+    "released_at": "2012-06-15",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 98,
+    "name": "Dark Explorers",
+    "slug": "dark-explorers",
+    "released_at": "2012-05-09",
+    "cards_total": 111,
+    "cards_printed_total": 108
+  },
+  {
+    "id": 99,
+    "name": "Next Destinies",
+    "slug": "next-destinies",
+    "released_at": "2012-02-08",
+    "cards_total": 103,
+    "cards_printed_total": 99
+  },
+  {
+    "id": 100,
+    "name": "Noble Victories",
+    "slug": "noble-victories",
+    "released_at": "2011-11-16",
+    "cards_total": 102,
+    "cards_printed_total": 101
+  },
+  {
+    "id": 101,
+    "name": "Emerging Powers",
+    "slug": "emerging-powers",
+    "released_at": "2011-08-31",
+    "cards_total": 98,
+    "cards_printed_total": 98
+  },
+  {
+    "id": 102,
+    "name": "McDonald's Collection 2011",
+    "slug": "mcdonalds-collection-2011",
+    "released_at": "2011-06-17",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 103,
+    "name": "Black & White",
+    "slug": "black-white",
+    "released_at": "2011-04-25",
+    "cards_total": 115,
+    "cards_printed_total": 114
+  },
+  {
+    "id": 104,
+    "name": "BW Black Star Promos",
+    "slug": "bw-black-star-promos",
+    "released_at": "2011-03-01",
+    "cards_total": 101,
+    "cards_printed_total": 101
+  },
+  {
+    "id": 105,
+    "name": "Call of Legends",
+    "slug": "call-of-legends",
+    "released_at": "2011-02-09",
+    "cards_total": 106,
+    "cards_printed_total": 95
+  },
+  {
+    "id": 106,
+    "name": "HS—Triumphant",
+    "slug": "hs-triumphant",
+    "released_at": "2010-11-03",
+    "cards_total": 103,
+    "cards_printed_total": 102
+  },
+  {
+    "id": 107,
+    "name": "HS—Undaunted",
+    "slug": "hs-undaunted",
+    "released_at": "2010-08-18",
+    "cards_total": 91,
+    "cards_printed_total": 90
+  },
+  {
+    "id": 108,
+    "name": "HS—Unleashed",
+    "slug": "hs-unleashed",
+    "released_at": "2010-05-12",
+    "cards_total": 96,
+    "cards_printed_total": 95
+  },
+  {
+    "id": 109,
+    "name": "HeartGold & SoulSilver",
+    "slug": "heartgold-soulsilver",
+    "released_at": "2010-02-10",
+    "cards_total": 124,
+    "cards_printed_total": 123
+  },
+  {
+    "id": 110,
+    "name": "HGSS Black Star Promos",
+    "slug": "hgss-black-star-promos",
+    "released_at": "2010-02-10",
+    "cards_total": 25,
+    "cards_printed_total": 25
+  },
+  {
+    "id": 111,
+    "name": "Pokémon Rumble",
+    "slug": "pokemon-rumble",
+    "released_at": "2009-12-02",
+    "cards_total": 16,
+    "cards_printed_total": 16
+  },
+  {
+    "id": 112,
+    "name": "Arceus",
+    "slug": "arceus",
+    "released_at": "2009-11-04",
+    "cards_total": 111,
+    "cards_printed_total": 99
+  },
+  {
+    "id": 113,
+    "name": "Supreme Victors",
+    "slug": "supreme-victors",
+    "released_at": "2009-08-19",
+    "cards_total": 153,
+    "cards_printed_total": 147
+  },
+  {
+    "id": 114,
+    "name": "Rising Rivals",
+    "slug": "rising-rivals",
+    "released_at": "2009-05-16",
+    "cards_total": 120,
+    "cards_printed_total": 111
+  },
+  {
+    "id": 115,
+    "name": "POP Series 9",
+    "slug": "pop-series-9",
+    "released_at": "2009-03-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 116,
+    "name": "Platinum",
+    "slug": "platinum",
+    "released_at": "2009-02-11",
+    "cards_total": 133,
+    "cards_printed_total": 127
+  },
+  {
+    "id": 117,
+    "name": "Stormfront",
+    "slug": "stormfront",
+    "released_at": "2008-11-01",
+    "cards_total": 106,
+    "cards_printed_total": 100
+  },
+  {
+    "id": 118,
+    "name": "POP Series 8",
+    "slug": "pop-series-8",
+    "released_at": "2008-09-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 119,
+    "name": "Legends Awakened",
+    "slug": "legends-awakened",
+    "released_at": "2008-08-01",
+    "cards_total": 146,
+    "cards_printed_total": 146
+  },
+  {
+    "id": 120,
+    "name": "Majestic Dawn",
+    "slug": "majestic-dawn",
+    "released_at": "2008-05-01",
+    "cards_total": 100,
+    "cards_printed_total": 100
+  },
+  {
+    "id": 121,
+    "name": "POP Series 7",
+    "slug": "pop-series-7",
+    "released_at": "2008-03-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 122,
+    "name": "Great Encounters",
+    "slug": "great-encounters",
+    "released_at": "2008-02-01",
+    "cards_total": 106,
+    "cards_printed_total": 106
+  },
+  {
+    "id": 123,
+    "name": "Secret Wonders",
+    "slug": "secret-wonders",
+    "released_at": "2007-11-01",
+    "cards_total": 132,
+    "cards_printed_total": 132
+  },
+  {
+    "id": 124,
+    "name": "POP Series 6",
+    "slug": "pop-series-6",
+    "released_at": "2007-09-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 125,
+    "name": "Mysterious Treasures",
+    "slug": "mysterious-treasures",
+    "released_at": "2007-08-01",
+    "cards_total": 124,
+    "cards_printed_total": 123
+  },
+  {
+    "id": 126,
+    "name": "Diamond & Pearl",
+    "slug": "diamond-pearl",
+    "released_at": "2007-05-01",
+    "cards_total": 130,
+    "cards_printed_total": 130
+  },
+  {
+    "id": 127,
+    "name": "DP Black Star Promos",
+    "slug": "dp-black-star-promos",
+    "released_at": "2007-05-01",
+    "cards_total": 56,
+    "cards_printed_total": 56
+  },
+  {
+    "id": 128,
+    "name": "POP Series 5",
+    "slug": "pop-series-5",
+    "released_at": "2007-03-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 129,
+    "name": "Power Keepers",
+    "slug": "power-keepers",
+    "released_at": "2007-02-02",
+    "cards_total": 108,
+    "cards_printed_total": 108
+  },
+  {
+    "id": 130,
+    "name": "Dragon Frontiers",
+    "slug": "dragon-frontiers",
+    "released_at": "2006-11-01",
+    "cards_total": 101,
+    "cards_printed_total": 101
+  },
+  {
+    "id": 131,
+    "name": "Crystal Guardians",
+    "slug": "crystal-guardians",
+    "released_at": "2006-08-01",
+    "cards_total": 100,
+    "cards_printed_total": 100
+  },
+  {
+    "id": 132,
+    "name": "POP Series 4",
+    "slug": "pop-series-4",
+    "released_at": "2006-08-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 133,
+    "name": "Holon Phantoms",
+    "slug": "holon-phantoms",
+    "released_at": "2006-05-01",
+    "cards_total": 111,
+    "cards_printed_total": 110
+  },
+  {
+    "id": 134,
+    "name": "POP Series 3",
+    "slug": "pop-series-3",
+    "released_at": "2006-04-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 135,
+    "name": "EX Trainer Kit 2 Plusle",
+    "slug": "ex-trainer-kit-2-plusle",
+    "released_at": "2006-03-01",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 136,
+    "name": "EX Trainer Kit 2 Minun",
+    "slug": "ex-trainer-kit-2-minun",
+    "released_at": "2006-03-01",
+    "cards_total": 12,
+    "cards_printed_total": 12
+  },
+  {
+    "id": 137,
+    "name": "Legend Maker",
+    "slug": "legend-maker",
+    "released_at": "2006-02-01",
+    "cards_total": 93,
+    "cards_printed_total": 92
+  },
+  {
+    "id": 138,
+    "name": "Delta Species",
+    "slug": "delta-species",
+    "released_at": "2005-10-31",
+    "cards_total": 114,
+    "cards_printed_total": 113
+  },
+  {
+    "id": 139,
+    "name": "Unseen Forces",
+    "slug": "unseen-forces",
+    "released_at": "2005-08-01",
+    "cards_total": 145,
+    "cards_printed_total": 115
+  },
+  {
+    "id": 140,
+    "name": "POP Series 2",
+    "slug": "pop-series-2",
+    "released_at": "2005-08-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 141,
+    "name": "Emerald",
+    "slug": "emerald",
+    "released_at": "2005-05-01",
+    "cards_total": 107,
+    "cards_printed_total": 106
+  },
+  {
+    "id": 142,
+    "name": "Deoxys",
+    "slug": "deoxys",
+    "released_at": "2005-02-01",
+    "cards_total": 108,
+    "cards_printed_total": 107
+  },
+  {
+    "id": 143,
+    "name": "Team Rocket Returns",
+    "slug": "team-rocket-returns",
+    "released_at": "2004-11-01",
+    "cards_total": 111,
+    "cards_printed_total": 109
+  },
+  {
+    "id": 144,
+    "name": "FireRed & LeafGreen",
+    "slug": "firered-leafgreen",
+    "released_at": "2004-09-01",
+    "cards_total": 116,
+    "cards_printed_total": 112
+  },
+  {
+    "id": 145,
+    "name": "POP Series 1",
+    "slug": "pop-series-1",
+    "released_at": "2004-09-01",
+    "cards_total": 17,
+    "cards_printed_total": 17
+  },
+  {
+    "id": 146,
+    "name": "Hidden Legends",
+    "slug": "hidden-legends",
+    "released_at": "2004-06-01",
+    "cards_total": 102,
+    "cards_printed_total": 101
+  },
+  {
+    "id": 147,
+    "name": "EX Trainer Kit Latias",
+    "slug": "ex-trainer-kit-latias",
+    "released_at": "2004-06-01",
+    "cards_total": 10,
+    "cards_printed_total": 10
+  },
+  {
+    "id": 148,
+    "name": "EX Trainer Kit Latios",
+    "slug": "ex-trainer-kit-latios",
+    "released_at": "2004-06-01",
+    "cards_total": 10,
+    "cards_printed_total": 10
+  },
+  {
+    "id": 149,
+    "name": "Team Magma vs Team Aqua",
+    "slug": "team-magma-vs-team-aqua",
+    "released_at": "2004-03-01",
+    "cards_total": 97,
+    "cards_printed_total": 95
+  },
+  {
+    "id": 150,
+    "name": "Dragon",
+    "slug": "dragon",
+    "released_at": "2003-11-24",
+    "cards_total": 100,
+    "cards_printed_total": 97
+  },
+  {
+    "id": 151,
+    "name": "Nintendo Black Star Promos",
+    "slug": "nintendo-black-star-promos",
+    "released_at": "2003-10-01",
+    "cards_total": 40,
+    "cards_printed_total": 40
+  },
+  {
+    "id": 152,
+    "name": "Sandstorm",
+    "slug": "sandstorm",
+    "released_at": "2003-09-18",
+    "cards_total": 100,
+    "cards_printed_total": 100
+  },
+  {
+    "id": 153,
+    "name": "Ruby & Sapphire",
+    "slug": "ruby-sapphire",
+    "released_at": "2003-07-01",
+    "cards_total": 109,
+    "cards_printed_total": 109
+  },
+  {
+    "id": 154,
+    "name": "Skyridge",
+    "slug": "skyridge",
+    "released_at": "2003-05-12",
+    "cards_total": 182,
+    "cards_printed_total": 144
+  },
+  {
+    "id": 155,
+    "name": "Aquapolis",
+    "slug": "aquapolis",
+    "released_at": "2003-01-15",
+    "cards_total": 182,
+    "cards_printed_total": 147
+  },
+  {
+    "id": 156,
+    "name": "Best of Game",
+    "slug": "best-of-game",
+    "released_at": "2002-12-01",
+    "cards_total": 9,
+    "cards_printed_total": 9
+  },
+  {
+    "id": 157,
+    "name": "Expedition Base Set",
+    "slug": "expedition-base-set",
+    "released_at": "2002-09-15",
+    "cards_total": 165,
+    "cards_printed_total": 165
+  },
+  {
+    "id": 158,
+    "name": "Legendary Collection",
+    "slug": "legendary-collection",
+    "released_at": "2002-05-24",
+    "cards_total": 110,
+    "cards_printed_total": 110
+  },
+  {
+    "id": 159,
+    "name": "Neo Destiny",
+    "slug": "neo-destiny",
+    "released_at": "2002-02-28",
+    "cards_total": 113,
+    "cards_printed_total": 105
+  },
+  {
+    "id": 160,
+    "name": "Neo Revelation",
+    "slug": "neo-revelation",
+    "released_at": "2001-09-21",
+    "cards_total": 66,
+    "cards_printed_total": 64
+  },
+  {
+    "id": 161,
+    "name": "Southern Islands",
+    "slug": "southern-islands",
+    "released_at": "2001-07-31",
+    "cards_total": 18,
+    "cards_printed_total": 18
+  },
+  {
+    "id": 162,
+    "name": "Neo Discovery",
+    "slug": "neo-discovery",
+    "released_at": "2001-06-01",
+    "cards_total": 75,
+    "cards_printed_total": 75
+  },
+  {
+    "id": 163,
+    "name": "Neo Genesis",
+    "slug": "neo-genesis",
+    "released_at": "2000-12-16",
+    "cards_total": 111,
+    "cards_printed_total": 111
+  },
+  {
+    "id": 164,
+    "name": "Gym Challenge",
+    "slug": "gym-challenge",
+    "released_at": "2000-10-16",
+    "cards_total": 132,
+    "cards_printed_total": 132
+  },
+  {
+    "id": 165,
+    "name": "Gym Heroes",
+    "slug": "gym-heroes",
+    "released_at": "2000-08-14",
+    "cards_total": 132,
+    "cards_printed_total": 132
+  },
+  {
+    "id": 166,
+    "name": "Team Rocket",
+    "slug": "team-rocket",
+    "released_at": "2000-04-24",
+    "cards_total": 83,
+    "cards_printed_total": 82
+  },
+  {
+    "id": 167,
+    "name": "Base Set 2",
+    "slug": "base-set-2",
+    "released_at": "2000-02-24",
+    "cards_total": 130,
+    "cards_printed_total": 130
+  },
+  {
+    "id": 168,
+    "name": "Fossil",
+    "slug": "fossil",
+    "released_at": "1999-10-10",
+    "cards_total": 62,
+    "cards_printed_total": 62
+  },
+  {
+    "id": 169,
+    "name": "Wizards Black Star Promos",
+    "slug": "wizards-black-star-promos",
+    "released_at": "1999-07-01",
+    "cards_total": 53,
+    "cards_printed_total": 53
+  },
+  {
+    "id": 170,
+    "name": "Jungle",
+    "slug": "jungle",
+    "released_at": "1999-06-16",
+    "cards_total": 64,
+    "cards_printed_total": 64
+  },
+  {
+    "id": 171,
+    "name": "Base",
+    "slug": "base",
+    "released_at": "1999-01-09",
+    "cards_total": 102,
+    "cards_printed_total": 102
+  }
+]
