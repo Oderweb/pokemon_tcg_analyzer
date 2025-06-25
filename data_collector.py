@@ -158,53 +158,53 @@ class PokemonDataCollector:
             print(f"Error fetching cards for episode {episode_id}: {e}")
             return []
     
-   def get_cards_by_set_name(self, set_name, limit=50):
-    """
-    Optimized version - minimal API calls
-    """
-    try:
-        print(f"Getting top {limit} cards for '{set_name}' (optimized method)")
+    def get_cards_by_set_name(self, set_name, limit=50):
+        """
+        Optimized version - minimal API calls
+        """
+        try:
+            print(f"Getting top {limit} cards for '{set_name}' (optimized method)")
         
-        # Try direct search first (1 API call)
-        url = f"{self.base_url}/cards"
-        params = {
-            "search": set_name,
-            "per_page": min(limit, 50),
-            "sort": "price_desc"
-        }
-        
-        response = requests.get(url, headers=self.headers, params=params)
-        response.raise_for_status()
-        
-        data = response.json()
-        cards = data.get('data', [])
-        
-        print(f"   Found {len(cards)} cards via direct search")
-        
-        if cards:
-            # Filter cards with valid prices
-            cards_with_prices = []
-            for card in cards:
-                price = self.extract_card_price(card)
-                if price > 0:
-                    cards_with_prices.append(card)
+            # Try direct search first (1 API call)
+            url = f"{self.base_url}/cards"
+            params = {
+                "search": set_name,
+                "per_page": min(limit, 50),
+                "sort": "price_desc"
+            }
             
-            print(f"   {len(cards_with_prices)} cards have valid prices")
+            response = requests.get(url, headers=self.headers, params=params)
+            response.raise_for_status()
             
-            if cards_with_prices:
-                # Show top 3 for debugging
-                for i, card in enumerate(cards_with_prices[:3], 1):
+            data = response.json()
+            cards = data.get('data', [])
+            
+            print(f"   Found {len(cards)} cards via direct search")
+            
+            if cards:
+                # Filter cards with valid prices
+                cards_with_prices = []
+                for card in cards:
                     price = self.extract_card_price(card)
-                    print(f"     {i}. {card.get('name', 'Unknown')} - €{price:.2f}")
+                    if price > 0:
+                        cards_with_prices.append(card)
                 
-                return cards_with_prices[:limit]
-        
-        print(f"   No valid cards found for '{set_name}'")
-        return []
-        
-    except Exception as e:
-        print(f"Error getting cards for '{set_name}': {e}")
-        return []
+                print(f"   {len(cards_with_prices)} cards have valid prices")
+                
+                if cards_with_prices:
+                    # Show top 3 for debugging
+                    for i, card in enumerate(cards_with_prices[:3], 1):
+                        price = self.extract_card_price(card)
+                        print(f"     {i}. {card.get('name', 'Unknown')} - €{price:.2f}")
+                    
+                    return cards_with_prices[:limit]
+            
+            print(f"   No valid cards found for '{set_name}'")
+            return []
+            
+        except Exception as e:
+            print(f"Error getting cards for '{set_name}': {e}")
+            return []
     
     def get_all_cards_from_episode(self, episode_id):
         """
