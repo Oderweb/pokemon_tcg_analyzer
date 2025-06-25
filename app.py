@@ -208,3 +208,17 @@ if __name__ == '__main__':
     print("🔄 Press Ctrl+C to stop the server")
     
     app.run(debug=True, host='127.0.0.1', port=8080)
+
+@app.route('/api/init-data')
+def init_data():
+    """Initialize data files if missing"""
+    try:
+        collector = PokemonDataCollector()
+        if collector.test_api_connection():
+            # Run episode discovery
+            collector.discover_available_sets()
+            return jsonify({'success': True, 'message': 'Data initialized'})
+        else:
+            return jsonify({'success': False, 'error': 'API connection failed'})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)})
