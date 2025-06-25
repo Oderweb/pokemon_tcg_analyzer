@@ -222,3 +222,31 @@ def init_data():
             return jsonify({'success': False, 'error': 'API connection failed'})
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)})
+
+
+@app.route('/api/debug-files')
+def debug_files():
+    """Check what files are available"""
+    import os
+    try:
+        files = os.listdir('.')
+        return jsonify({
+            'current_directory': os.getcwd(),
+            'files': files,
+            'pokemon_episode_ids_exists': os.path.exists('pokemon_episode_ids.json'),
+            'top_cards_exists': os.path.exists('top_expensive_cards_fixed.json')
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+@app.route('/api/test-simple')
+def test_simple():
+    """Simple test endpoint"""
+    try:
+        collector = PokemonDataCollector()
+        if collector.test_api_connection():
+            return jsonify({'success': True, 'message': 'API connection works'})
+        else:
+            return jsonify({'success': False, 'message': 'API connection failed'})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)})
