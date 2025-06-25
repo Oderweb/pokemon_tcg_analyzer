@@ -249,26 +249,44 @@ class PokemonDataCollector:
     
     def extract_card_price(self, card):
         """
-        Extract price using correct API fields
+        Simplified price extraction for RapidAPI Pokemon TCG
         """
         prices = card.get('prices', {})
         
         if not prices:
             return 0
         
-        # Try Cardmarket first (EUR)
-        cardmarket = prices.get('cardmarket', {})
-        if cardmarket:
-            price = cardmarket.get('lowest_near_mint')
-            if price and price > 0:
-                return price
+        # Try all possible price sources and fields
+        price_sources = [
+            ('cardmarket', ['lowest_near_mint', 'market_price', 'lowest', 'average', '30d_average', '7d_average']),
+            ('tcg_player', ['market_price', 'mid_price', 'low_price', 'high_price']),
+            ('tcgplayer', ['market_price', 'mid_price', 'low_price', 'high_price'])
+        ]
         
-        # Fallback to TCGPlayer
-        tcgplayer = prices.get('tcg_player', {})
-        if tcgplayer:
-            price = tcgplayer.get('market_price')
-            if price and price > 0:
-                return price
+        for source_name, price_fields in price_sources:
+            source_data = prices.get(source_name, {})
+            if isinstance(source_data, dict):
+                for field in price_fields:
+                    price = source_data.get(field)
+                    if price is not None:
+                        try:
+                            price_float = float(price)
+                            if price_float > 0:
+                                return price_float
+                        except (ValueError, TypeError):
+                            continue
+        
+        # If nothing found, try any numeric value in the prices object
+        for source_name, source_data in prices.items():
+            if isinstance(source_data, dict):
+                for field_name, field_value in source_data.items():
+                    if field_value is not None:
+                        try:
+                            price_float = float(field_value)
+                            if price_float > 0:
+                                return price_float
+                        except (ValueError, TypeError):
+                            continue
         
         return 0
     
