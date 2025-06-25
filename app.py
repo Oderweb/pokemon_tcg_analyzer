@@ -3,6 +3,7 @@ from data_collector import PokemonDataCollector
 from roi_calculator import ROICalculator
 import json
 import os
+import gc
 from datetime import datetime
 
 app = Flask(__name__)
