@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon TCG Investment Analyzer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 20px;
+            padding: 30px;
+        }
+        
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .pokemon-title {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease infinite;
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .roi-positive { color: #28a745; font-weight: bold; }
+        .roi-negative { color: #dc3545; font-weight: bold; }
+        .roi-neutral { color: #6c757d; font-weight: bold; }
+        
+        .risk-low { color: #28a745; }
+        .risk-medium { color: #ffc107; }
+        .risk-high { color: #dc3545; }
+        
+        .product-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .table-container {
+            max-height: 600px;
+            overflow-y: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .btn-analyze {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .btn-analyze:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .badge-roi {
+            font-size: 0.9rem;
+            padding: 8px 12px;
+        }
+        
+        .error-alert {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-container">
+            
+            <!-- Header Section -->
+            <div class="header-section">
+                <h1 class="pokemon-title">🎯 Pokemon TCG Investment Analyzer</h1>
+                <p class="lead text-muted">Discover the most profitable Pokemon TCG investment opportunities</p>
+                
+                <!-- Analysis Controls -->
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <select id="setLimitSelect" class="form-select">
+                                <option value="10">Analyze Top 10 Recent Sets</option>
+                                <option value="15" selected>Analyze Top 15 Recent Sets</option>
+                                <option value="20">Analyze Top 20 Recent Sets</option>
+                                <option value="all">Analyze All Available Sets</option>
+                            </select>
+                            <button id="analyzeBtn" class="btn btn-analyze">
+                                <span id="analyzeText">🔍 Analyze Market</span>
+                                <span id="analyzeSpinner" class="spinner-border spinner-border-sm" style="display: none;"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Available Sets Info -->
+                <div id="setsInfo" class="text-muted small" style="display: none;">
+                    <span id="setsInfoText">Loading available sets...</span>
+                </div>
+            </div>
+
+            <!-- Error Alert -->
+            <div id="errorAlert" class="alert error-alert" style="display: none;">
+                <strong>Error:</strong> <span id="errorMessage"></span>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;"></div>
+                <p class="mt-3 text-muted">Analyzing Pokemon TCG market data...</p>
+            </div>
+
+            <!-- Summary Stats -->
+            <div id="summarySection" style="display: none;">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stats-card">
+                            <h3 id="totalProducts">0</h3>
+                            <p>Products Analyzed</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-card">
+                            <h3 id="positiveROI">0</h3>
+                            <p>Positive ROI</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-card">
+                            <h3 id="avgROI">0%</h3>
+                            <p>Average ROI</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-card">
+                            <h3 id="avgRisk">0/5</h3>
+                            <p>Average Risk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Table -->
+            <div id="resultsSection" style="display: none;">
+                <h3 class="mb-3">📊 Investment Opportunities</h3>
+                <div class="table-container">
+                    <table class="table table-hover">
+                        <thead class="table-dark sticky-top">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Product</th>
+                                <th>Set</th>
+                                <th>Price</th>
+                                <th>Est. Pull Value</th>
+                                <th style="cursor: pointer;" onclick="sortTable('roi')" id="roiHeader">ROI ↕️</th>
+                                <th style="cursor: pointer;" onclick="sortTable('risk')" id="riskHeader">Risk ↕️</th>
+                                <th>Packs</th>
+                                <th>Release Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody">
+                            <!-- Results will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-4 pt-3 border-top">
+                <small class="text-muted">
+                    Last updated: <span id="lastUpdated">Never</span> | 
+                    Data from Pokemon TCG API via RapidAPI
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        let currentData = [];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('analyzeBtn').addEventListener('click', analyzeMarket);
+            loadAvailableSets();
+        });
+
+        async function loadAvailableSets() {
+            try {
+                const response = await fetch('/api/sets');
+                const result = await response.json();
+                
+                if (result.success) {
+                    const totalSets = result.total_sets;
+                    const recentSets = result.sets.slice(0, 5);
+                    
+                    document.getElementById('setsInfo').style.display = 'block';
+                    document.getElementById('setsInfoText').innerHTML = 
+                        `📊 ${totalSets} Pokemon sets available | Recent: ${recentSets.map(s => s.name).join(', ')}`;
+                }
+            } catch (error) {
+                console.log('Could not load sets info:', error);
+            }
+        }
+
+        async function analyzeMarket() {
+            showLoading();
+            hideError();
+
+            try {
+                // Get selected limit
+                const limit = document.getElementById('setLimitSelect').value;
+                const url = limit === 'all' ? '/api/analyze' : `/api/analyze?limit=${limit}`;
+                
+                const response = await fetch(url);
+                const result = await response.json();
+
+                if (result.success) {
+                    currentData = result.data;
+                    displayResults(result.data, result.summary);
+                } else {
+                    showError(result.error || 'Analysis failed');
+                }
+            } catch (error) {
+                showError('Network error: ' + error.message);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        function displayResults(data, summary) {
+            // Update summary stats
+            document.getElementById('totalProducts').textContent = summary.total_products;
+            document.getElementById('positiveROI').textContent = summary.positive_roi_count;
+            document.getElementById('avgROI').textContent = summary.average_roi + '%';
+            document.getElementById('avgRisk').textContent = summary.average_risk + '/5';
+            document.getElementById('lastUpdated').textContent = summary.last_updated;
+
+            // Clear previous results
+            const tbody = document.getElementById('resultsTableBody');
+            tbody.innerHTML = '';
+
+            // Populate table
+            data.forEach((item, index) => {
+                const row = document.createElement('tr');
+                
+                // Add click handler for row
+                row.style.cursor = 'pointer';
+                row.addEventListener('click', () => showProductDetails(item));
+
+                row.innerHTML = `
+                    <td><span class="badge bg-primary">#${index + 1}</span></td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            ${item.image_url ? `<img src="${item.image_url}" class="product-image me-2" alt="${item.product_name}">` : ''}
+                            <div>
+                                <strong>${item.product_name}</strong><br>
+                                <small class="text-muted">${item.product_type.replace('_', ' ')}</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>${item.set_name}</td>
+                    <td>€${item.current_price}</td>
+                    <td>€${item.estimated_pull_value}</td>
+                    <td><span class="badge badge-roi ${getROIClass(item.roi_percentage)}">${item.roi_percentage}%</span></td>
+                    <td><span class="${getRiskClass(item.risk_score)}">${item.risk_score}/5</span></td>
+                    <td>${item.packs_per_box}</td>
+                    <td>${formatDate(item.release_date)}</td>
+                `;
+
+                tbody.appendChild(row);
+            });
+
+            // Show results
+            document.getElementById('summarySection').style.display = 'block';
+            document.getElementById('resultsSection').style.display = 'block';
+        }
+
+        function getROIClass(roi) {
+            if (roi > 50) return 'bg-success';
+            if (roi > 0) return 'bg-warning';
+            return 'bg-danger';
+        }
+
+        function getRiskClass(risk) {
+            if (risk <= 2.5) return 'risk-low';
+            if (risk <= 3.5) return 'risk-medium';
+            return 'risk-high';
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return 'Unknown';
+            const date = new Date(dateString);
+            return date.toLocaleDateString();
+        }
+
+        function showProductDetails(item) {
+            alert(`Product Details:\n\n${item.product_name}\nSet: ${item.set_name}\nPrice: €${item.current_price}\nROI: ${item.roi_percentage}%\nRisk: ${item.risk_score}/5\nPacks: ${item.packs_per_box}\n\nClick OK to close.`);
+        }
+
+        function showLoading() {
+            document.getElementById('loadingSpinner').style.display = 'block';
+            document.getElementById('analyzeText').style.display = 'none';
+            document.getElementById('analyzeSpinner').style.display = 'inline-block';
+            document.getElementById('analyzeBtn').disabled = true;
+        }
+
+        function hideLoading() {
+            document.getElementById('loadingSpinner').style.display = 'none';
+            document.getElementById('analyzeText').style.display = 'inline';
+            document.getElementById('analyzeSpinner').style.display = 'none';
+            document.getElementById('analyzeBtn').disabled = false;
+        }
+
+        function showError(message) {
+            document.getElementById('errorMessage').textContent = message;
+            document.getElementById('errorAlert').style.display = 'block';
+        }
+
+        function hideError() {
+            document.getElementById('errorAlert').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
